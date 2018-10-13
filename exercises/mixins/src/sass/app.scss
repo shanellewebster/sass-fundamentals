@@ -1,5 +1,5 @@
-@import '_variables';
-@import '_mixins';
+@import "_variables";
+@import "_mixins";
 
 .btn {
   display: inline-block;
@@ -16,12 +16,25 @@
     opacity: 0.65;
     box-shadow: none;
   }
-  &.btn-yellow  { @include btn-color(#990);  }
-  &.btn-blue    { @include btn-color(#33a);  }
-  &.btn-green   { @include btn-color(#3c3);  }
-  &.btn-purple  { @include btn-color(#939);  }
-  &.btn-pink    { @include btn-color($hopbush);}
-  &.btn-orange  { @include btn-color(#f93);  }
-  &.btn-brown   { @include btn-color(#952);  }
-  
+  &.btn-yellow {
+    @include btn-color(#990);
+  }
+  &.btn-blue {
+    @include btn-color(#33a);
+  }
+  &.btn-green {
+    @include btn-color(#3c3);
+  }
+  &.btn-purple {
+    @include btn-color(#939);
+  }
+  &.btn-pink {
+    @include btn-color($hopbush);
+  }
+  &.btn-orange {
+    @include btn-color(#f93);
+  }
+  &.btn-brown {
+    @include btn-color(#952);
+  }
 }
