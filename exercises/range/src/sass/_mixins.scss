@@ -1,3 +1,18 @@
 @mixin range-thumb() {
- 
+  &::-moz-range-thumb {
+    @content;
+  }
+  &::-ms-thumb {
+    @content;
+  }
+}
+
+@mixin range-track() {
+  &::-moz-range-track {
+    @content;
+  }
+
+  &::-webkit-slider-runnable-track {
+    @content;
+  }
 }
