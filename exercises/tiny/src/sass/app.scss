@@ -1,0 +1,13 @@
+$dimensions: (
+  "m": "margin",
+  "p": "padding"
+);
+
+@each $dim in $dimensions {
+  @for $i from 1 through 5 {
+    $size: $i * 5;
+    .#{nth($dim, 2)}-t-#{$size} {
+      #{nth($dim, 2)}-top: #{$size}px;
+    }
+  }
+}
